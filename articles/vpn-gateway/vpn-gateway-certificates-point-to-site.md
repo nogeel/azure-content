@@ -38,7 +38,7 @@ Makecert is one way of creating a self-signed certificate. The following steps w
 
 3. Next, create and install a certificate in the Personal certificate store on your computer. The following example creates a corresponding *.cer* file that you upload to Azure when configuring P2S. Run the following command, as administrator. Replace  *ARMP2SRootCert* and *ARMP2SRootCert.cer* with the name that you want to use for the certificate.<br><br>The certificate will be located in your Certificates - Current User\Personal\Certificates.
 
-    	makecert -sky exchange -r -n "CN=ARMP2SRootCert" -pe -a sha1 -len 2048 -ss My "ARMP2SRootCert.cer"
+    	makecert -sky exchange -r -n "CN=ARMP2SRootCert" -pe -a sha1 -len 2048 -ss "ARMP2SRootCert.cer"
 
 
 ###  <a name="rootpublickey"></a>To obtain the public key
